@@ -18,7 +18,7 @@
         static class MyHandler implements HttpHandler {
             @Override
             public void handle(HttpExchange t) throws IOException {
-                String response = "This is my response at 01:18.";
+                String response = "This is my response at 09:20.";
                 t.sendResponseHeaders(200, response.length());
                 OutputStream os = t.getResponseBody();
                 os.write(response.getBytes());
